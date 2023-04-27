@@ -7,7 +7,7 @@ const PORT = process.env.port || 3001;
 
 const app = express();
 
-app.use(clog);
+//app.use(clog);
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
