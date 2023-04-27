@@ -1,13 +1,11 @@
 const express = require('express');
 const path = require('path');
-const { clog } = require('./middleware/clog');
 const api = require('./routes/index.js');
 
 const PORT = process.env.PORT || 8080;
 
 const app = express();
 
-//app.use(clog);
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
