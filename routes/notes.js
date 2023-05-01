@@ -37,14 +37,23 @@ notes.post('/', (req, res) => {
 );
 
 notes.delete('/:id', (req, res) => {
+
+
+
     const noteId = req.params.id;
 
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((data) => {
-            // console.log(data);
+
+            const noteExists = data.find((note) => note.id === noteId);
+            if (!noteExists) {
+                console.log(fgRed + `Item with unique id ` + fgYellow + `${noteId}` + fgRed + ` does not exist in db.json database.`)
+                res.json(`Item with unique id ${noteId} does not exist in db.json database.`);
+                return;
+            }
+
             const dbTitle = data.find((note) => note.id === noteId);
-        
             const updatedDb = data.filter((note) => note.id !== noteId);
 
             writeToFile('./db/db.json', updatedDb);
