@@ -1,12 +1,17 @@
 [
     {
-        "title": "Lorem Ipsum",
-        "text": "Latin Jargon Mumbo Jumbo",
-        "id": "56d45492-7482-45ea-bb77-4f06b38f63d5"
+    "title": "Lorem Ipsum",
+    "text": "Latin Jargon Mumbo Jumbo",
+    "id": "56d45492-7482-45ea-bb77-4f06b38f63d5"
     },
     {
-        "title": "Lorem asdfsfafsf",
-        "text": "Latin Jargon Mumbo Jumbo",
-        "id": "56d45492-2342-45ea-bb77-4f06b38f63d5"
+    "title": "Shopping List",
+    "text": "- Eggs\n- Milk\n- Honey\n- Bread\n- Orange Juice",
+    "id": "c20d02ad-4aee-4e2d-a211-d7ababbbcfe6"
+    },
+    {
+    "title": "Yeehaw",
+    "text": "Yeehaw cowboy, hyaaahhhhh",
+    "id": "ca4952d2-7e71-4cc9-b1bb-784fbb792577"
     }
 ]
